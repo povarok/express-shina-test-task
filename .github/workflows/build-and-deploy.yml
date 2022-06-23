@@ -9,7 +9,7 @@ jobs:
       - name: setup node.js 🔧
         uses: actions/setup-node@v1
         with:
-          node-version: "12.19.0"
+          node-version: "17.3.0"
 
       - name: install 🔧
         run: npm install
