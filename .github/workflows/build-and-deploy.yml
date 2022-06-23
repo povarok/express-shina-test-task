@@ -1,0 +1,26 @@
+name: build and deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: setup node.js 🔧
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.19.0"
+
+      - name: install 🔧
+        run: npm install
+
+      - name: build 🔧
+        run: npm run build
+
+      - name: deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
