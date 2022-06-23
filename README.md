@@ -1,6 +1,10 @@
 # About
 Тестовое задание экспресс шина
 
+
+# Deploy
+https://povarok.github.io/express-shina-test-task/
+
 # Requirements
 ```shell
 node >= 17.3.0
