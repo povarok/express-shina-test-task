@@ -1,0 +1,16 @@
+@import "../styles/media-queries";
+
+.pickPoints {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+  max-height: 550px;
+  overflow-y: auto;
+
+  @media screen and (min-width: $mobile-width) {
+    width: 50%;
+    height: 800px;
+    max-height: 800px;
+  }
+}

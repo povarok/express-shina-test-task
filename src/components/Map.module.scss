@@ -1,0 +1,11 @@
+@import "../styles/media-queries";
+
+.map {
+  border: 0;
+  width: 100%;
+  height: 800px;
+
+  @media screen and (min-width: $mobile-width) {
+    width: 50%;
+  }
+}

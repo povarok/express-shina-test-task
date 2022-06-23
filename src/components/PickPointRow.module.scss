@@ -1,0 +1,56 @@
+@import "../styles/colors";
+
+.row {
+  color: $text-color;
+  list-style-type: none;
+  padding: 8px 16px;
+  background: $color-button;
+  margin-bottom: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-button-hover;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rowActive {
+  background: $color-button-active;
+
+  &:hover {
+    background: $color-button-active;
+  }
+}
+
+.budget {
+  padding: 4px 8px;
+  background: $color-bg;
+  margin-right: 12px;
+  font-size: 14px;
+  border-radius: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.budgetRow {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+}

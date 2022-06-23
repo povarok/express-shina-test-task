@@ -1,0 +1,12 @@
+@import "media-queries";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+
+  @media screen and (min-width: $mobile-width) {
+    flex-direction: row;
+  }
+}
